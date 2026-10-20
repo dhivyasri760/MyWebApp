@@ -15,7 +15,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>MyWebApp</finalName>
-  </build>
+  
+ <build>
+  <finalName>MyWebApp</finalName>
+  <plugins>                                                                       
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.5.1</version>
+      <configuration>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
 </project>
+ctrl en
